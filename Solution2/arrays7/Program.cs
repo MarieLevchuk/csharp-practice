@@ -8,6 +8,7 @@ namespace arrays7
         {
             Task_1();
             Task_2();
+            Task_3();
         }
         static void Task_1()
         {
@@ -32,6 +33,29 @@ namespace arrays7
             {
                 Console.Write($"{item}, ");
             }        
+        }
+        static void Task_3()
+        {
+            Random rnd = new Random();
+            int[] arr = new int[13];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = rnd.Next(1, 50);
+            }
+            Console.WriteLine();
+            foreach (var item in arr)
+            {
+                Console.Write($"{item}, ");
+            }            
+            int max = arr[0];
+            foreach (var item in arr)
+            {
+                if (item > max)
+                {
+                    max = item;
+                }
+            } 
+            Console.WriteLine($"\nmax: {max}");
         }
     }
 }
