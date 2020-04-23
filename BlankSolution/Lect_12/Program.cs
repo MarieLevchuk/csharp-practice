@@ -12,7 +12,7 @@ namespace Lect_12
             Moto moto2 = new Moto();
             Console.WriteLine($"{Moto.Id}");
 
-            Moto moto3 = new Moto();
+            Moto moto3 = new Moto(100);
             Console.WriteLine($"{Moto.Id}");
 
             Moto moto4 = new Moto(44);
